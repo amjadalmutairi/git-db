@@ -1,0 +1,249 @@
+أريد إضافة اسمي لكل المشاريع التي أعمل عليها باستخدام git.
+استبدل your_name باسمك.
+‏git config --global user.name "#your‪_‬name‪"‬
+‏git config --global user.name
+
+أريد التحقق من وجود اسمي في إعدادت ال gti.
+
+‏git config --global user.name
+‏git config --global user.name
+
+أريد إضافة بريدي الإلكتروني لكل المشاريع التي أعمل عليها باستخدام git.
+استبدل your_email ببريدك الإلكتروني.
+‏git config --global user.email "#your_email‪"‬
+‏git config --global user.email
+
+أريد التحقق من وجود بريدي الإلكتروني في إعدادت ال gti.
+
+‏git config --global user‪.‬email
+‏git config --global user.email
+
+أريد تحديد المحرر (editor) لل git بأن يكون Atom.
+يلزمك تثبيت Atom قبل هذا الأمر.
+‏git config --global core.editor "atom --wait‪"‬
+‏git config --global core.editor "atom --wait‪"‬
+
+أريد تحديد المحرر (editor) لل git بأن يكون TextMate.
+يلزمك تثبيت TextMate قبل هذا الأمر.
+‏git config --global core.editor "mate -w‪"‬
+‏git config --global core.editor "mate -w‪"‬
+
+أريد تحديد المحرر (editor) لل git بأن يكون Sublime.
+يلزمك تثبيت Sublime قبل هذا الأمر.
+‏git config --global core.editor "subl -n -w‪"‬
+‏git config --global core.editor "subl -n -w‪"‬
+
+أريد إنشاء مجلد (مستودع) git  فارغ.
+هذا المستودع هو الذي سيتم فيه الاحتفاظ بكل التعديلات التي أجريت على المشروع.
+‏git init
+‏git init
+
+أريد نسخ مشروع كامل للبدء في العمل عليه‪.‬
+استبدل path_to_git_repo  برابط المشروع وهو غالبًا مايكون url، مثل المشاريع الموجودة في Github.
+‏git clone ‪#‬path‪_‬to‪_‬git‪_‬repo
+‏git clone
+
+أريد نسخ مشروع كامل للبدء في العمل عليه ولكن أرغب بتغيير اسم المشروع‪.‬
+استبدل new_name بالاسم الذي ترغب، واستبدل path_to_git_repo  برابط المشروع.
+‏git clone #path_to_git_repo #new‪_‬name
+‏git clone
+
+أريد معرفة الحالة الحالية التي تتواجد عليها ملفات المشروع‪.‬
+مثل معرفة ماهي التغييرات التي لم يتم حفظها، وماهي الملفات الجاهزة للحفظ..الخ‪.‬
+‏git status
+‏git status
+
+أريد معرفة الحالة الحالية التي تتواجد عليها ملفات المشروع لكن بطريقة مختصرة‪.‬
+
+‏git status ‪-‬s
+‏git status -s
+
+أريد رؤية السجل الكامل للتغييرات (commits) التي قمت بحفظها، مع التفاصيل.
+اضغط q للخروج.
+‏git log
+‏git log
+
+أريد رؤية السجل الكامل للتغييرات (commits) التي قمت بحفظها على أن يعرض التغيير الواحد في سطر واحد.
+اضغط q للخروج.
+‏git log --oneline
+‏git log --oneline
+
+أريد رؤية السجل الكامل للتغييرات (commits) التي قمت بحفظها مع معرفة التغيير الذي حدث لكل ملف.
+اضغط q للخروج.
+‏git log --stat
+‏git log --stat
+
+أريد رؤية السجل الكامل للتغييرات (commits) التي قمت بحفظها مع عرض الملفات والتغيير الذي حدث لها.
+اضغط q للخروج.
+‏git log -p
+‏git log -p
+
+أريد استعراض آخر تغييرين (commits) قمت بها.
+استبدل الرقم 2 بأي عدد ترغب.
+‏git log ‪-‬2
+‏git log -2
+
+أريد استعراض تغيير(commit) واحد.
+استبدل commit_number برقم ال (commit) الذي يميزها.
+‏git log -p #commit_number
+‏git log -p
+
+أريد وضع ملف واحد قمت بتعديله ليكون جاهز للحفظ (commit)‪.‬
+استبدل file_name باسم الملف.
+‏git add #file‪_‬name
+‏git add
+
+أريد وضع أكثر من ملف قمت بتعديلها لتكون جاهزة للحفظ (commit).
+استبدل file_name باسم الملف، يفصل أسماء الملفات مسافة واحدة.
+‏git add #file_name‪_‬1 ‪#file_name_‬2 ‪...‬ etc
+‏git add 
+
+أريد وضع كل الملفات لتكون جاهزة للحفظ (commit).
+استخدم النقطة ‪)‬.).
+‏git add ‪.‬
+‏git add ‪.‬
+
+أريد حفظ (commit) التغييرات التي أجريتها على الملفات.
+سيتم حفظ (commit) التغييرات للملفات التي تمت إضافها بالأمر add فقط‪.‬ قم باستبدال your_commit_message بالرسالة التي ترغب.
+‏git commit -m ‪"#‬your‪_‬commit‪_‬message‪"‬
+‏git commit -m ‪"‬
+
+أريد رؤية التغييرات(commits) التي أجريت على الملفات قبل أن أحفظها.
+
+‏git diff
+‏git diff
+
+أريد وضع علامة (Tag) لآخر تغيير(commit) قمت بحفظه.
+استبدل your_tag بالعلامة الخاصة بك.
+‏git tag -a #your‪_‬tag
+‏git tag -a
+
+أريد وضع علامة (Tag) لتغيير (commit) محدد قمت بحفظه.
+ استبدل your_tag بالعلامة لخاصة بك. استبدل commit_number  برقم ال (commit) الذي ترغب.
+‏ git tag -a #your_tag #commit_number
+‏git tag -a
+
+أريد معرفة تفاصيل علامة (Tag) محددة.
+استبدل your_tag باسم الTag الذي ترغب.
+‏git show #your‪_‬tag
+git show
+
+أريد عرض قائمة بكل العلامات (Tags) في المشروع.
+
+‏git tag
+‏git tag
+
+أريد معرفة كل المسارات (branches) الموجودة في المشروع.
+علامة (*) ترمز للمسار الحالي (current branch).
+‏git branch
+‏git branch
+
+أريد إنشاء مسار (branch) جديد.
+استبدل branch_name باسم المسار الذي ترغب.
+‏ git branch #branch‪_‬name
+‏git branch
+
+أريد إنشاء مسار  (branch) جديد عند نقطة (commit) معينة قمت بحفظها.
+استبدل branch_name باسم المسار و commit_number برقم ال (commit) الذي ترغب.
+‏git branch #branch_name ‪#‬commit‪_‬number
+‏git branch
+
+أريد تغيير المسار (branch) والانتقال لمسار (branch) آخر.
+استبدل branch_name باسم المسار(branch) الموجود.
+‏ git checkout #branch‪_‬name 
+‏git checkout
+
+أريد إنشاء مسار (branch) جديد والانتقال له مباشرة.
+استبدل branch_name باسم المسار (branch) الذي ترغب.
+‏git checkout -b ‪#‬branch‪_‬name
+‏git checkout -b
+
+أريد إنشاء مسار(branch) جديد يبدأ من مسار(branch) محدد.
+استبدل branch_name باسم المسار الذي ترغب، و exist_branch_name باسم المسار الذي ترغب البدء منه.
+‏git branch #branch_name ‪#‬exist‪_‬branch‪_‬name
+‏git branch
+
+أريد طباعة معلومات المسارات (branches) مع التغييرات (commites).
+‏HEAD -> يؤشر على المسار الحالي (current branch).
+‏ git log --oneline --decorate
+‏ git log --oneline --decorate
+
+أريد حذف مسار (branch).
+استبدل branch_name باسم المسار (branch) الذي ترغب بحذفه.
+‏git branch -d #branch‪_‬name
+git branch -d
+
+أريد عرض المعلومات المرتبطة بمسارات (branches) المشروع بشكل واضح ومفهوم.
+
+‏git log --oneline --decorate --graph --all
+‏git log --oneline --decorate --graph --all
+
+أريد دمج مسار (branch) محدد بالمسار الحالي (current branch).
+استبدل branch_name باسم المسار(branch) الذي ترغب بدمجه في المسار الحالي (current branch).
+‏git merge ‪#‬branch_name
+‏git merge
+
+أريد تعديل الرسالة في آخر عملية حفظ (commit) قمت بها.
+سيقوم git بفتح المحرر الخاص بك وستظهر لك رسالتك القديمة، قم بتغييرها ثم احفظ الملف وأغلقه.
+‏git commit --amend
+‏git commit --amend
+
+نسيت إضافة ملف في آخر عملية حفظ (commit) وأريد إضافته.
+قم بإضافة الملف بأمر add كأنك تود القيام بعملية حفظ (commit) جديدة، ثم أكتب هذا الأمر.
+‏git commit --amend
+‏git commit --amend
+
+أريد التراجع عن آخر تغيير (commit) قمت بحفظه  وحذف المفات التي تم حفظها، والعودة لل (commit) السابق.
+
+‏git reset --hard HEAD~1
+‏git reset --hard HEAD~1
+
+أريد التراجع عن آخر تغيير قمت بحفظه (commit) لكن مع إبقاء الملفات التي تم حفظها، والعودة لل (commit) السابق.
+
+‏git reset HEAD~1
+‏git reset HEAD~1
+
+أريد التراجع ن إضافة ملف تمت عن طريق أمر (add).
+استبدل file_name باسم الملف. وهنا انتقل الملف من حالة Staged إلى حالة Modified.
+‏git reset HEAD #file‪_‬name
+‏git reset HEAD 
+
+أريد ربط مشروعي الموجود على جهازي ب (Remote Repository ) ‪.‬
+ الفائدة من Remote Repository هي مشاركة المشروع مع الآخرين، و حفظ نسخة منه في مكان آخر. يلزمك هنا إنشاء مستودع ونسخ رابطه. استبدل remote_repo_url برابط ال Remote Repository، واستبدل remote_repo_name بالاسم الذي ترغب، وهو الاسم المرادف للرابط المستودع، والذي ستستخدمه عن العمل مع هذا المستودع.
+‏git remote add ‪#‬remote‪_‬repo‪_‬name ‪#‬remote‪_‬repo‪_‬url
+‏git remote add 
+
+أريد معرفة تفاصيل Remote Repositories التي أتعامل معها في المشروع.
+
+‏git remote -v 
+‏git remote -v 
+
+أريد عرض قائمة Remote Repositories التي أتعامل معها في المشروع.
+
+‏git remote
+‏git remote
+
+أريد جلب البيانات من Remote Repository إلى المشروع الذي على جهازي ولكن بدون دمج (merge) المسارات (branches).
+استبدل remote_repo_name باسم Remote Repository الذي قمت بربطه.
+‏git fetch #remote_repo‪_‬name
+‏git fetch
+
+أريد جلب البيانات من Remote Repository إلى المشروع الذي على جهازي مع دمج (merge) المسارات (branches).
+واستبدل remote_repo_name باسم Remote Repository الذي قمت بربطه.
+‏git pull #remote_repo_name
+‏git pull
+
+أريد رفع المشروع الذي على جهازي إلى Remote Repository.
+استبدل remote_repo_name باسم Remote Repository الذي قمت بربطه، واستبدل branch_name باسم المسار (branch) الذي ترغب.
+‏git push #remote_repo_name #branch‪_‬name
+‏git push
+
+أريد عرض تفاصيل Remote Repository محدد.
+استبدل remote_repo_name باسم Remote Repository الذي تريد.
+‏git remote show ‪#‬remote_repo_name
+‏git remote show
+
+أريد إعادة تسمية Remote Repository.
+استبدل remote_repo_old_name باسم Remote Repository الذي ترغب بتغييره ، واستبدل remote_repo_new‪_‬name بالاسم الجديد الذي تريده.
+‏git remote rename #remote_repo_old_name #remote_repo‪_‬new_name
+‏git remote rename

@@ -1,0 +1,9 @@
+CREATE TABLE
+IF NOT EXISTS COMMANDS (
+ id INT PRIMARY KEY,
+ title CHAR(100) NOT NULL,
+ description TEXT ,
+ command CHAR(100) NOT NULL,
+ toCopy CHAR(100) NOT NULL,
+ approved INT NOT NULL
+);
